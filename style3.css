@@ -1,0 +1,190 @@
+body {
+    margin: 200px;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-container {
+    width: 1000vw;
+    max-width: 760px;
+
+    height: 20vh;
+
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding:20px;
+    
+}
+.header-container .header-item1 {
+    background-color: purple;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    
+
+
+}
+.main-container {
+    padding-top: 0;
+    width:1000vw;
+    height: 80vh;
+    max-width: 800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+.main-container .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+    padding:20px;
+
+}
+.main-container .top .main-top-item1 {
+    background-color: magenta;
+   
+    height: 4rem;
+    border-radius: 2rem;
+}
+.main-container .top .main-top-item2 {
+    background-color: magenta;
+    
+    height: 4rem;
+    border-radius: 2rem;
+}
+.main-container .top .main-top-item3 {
+    background-color: magenta;
+    
+    height: 4rem;
+    border-radius: 2rem;
+}
+.main-container .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    height: 60vh;'
+    background-color: white;
+    gap:5px;
+    padding:20px 20px;
+}
+.main-container .bottom .main-bottom-item1 {
+    background-color: lightpink;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+.main-container .bottom .main-bottom-item2 {
+    background-color: lightpink;
+    grid-column: 2/3;
+    grid-row: 1/4;
+}.main-container .bottom .main-bottom-item3 {
+    background-color: lightpink;
+    grid-column: 1/2;
+    grid-row: 4/7;
+}.main-container .bottom .main-bottom-item4 {
+    background-color: lightpink;
+    grid-column: 2/3;
+    grid-row: 4/7;
+}
+.main-container .bottom .main-bottom-item5 {
+    background-color: purple;
+    grid-column: 3/4;
+    grid-row:1/3;
+}
+.main-container .bottom .main-bottom-item6 {
+    background-color: purple;
+    grid-column: 3/4;
+    grid-row:3/5;
+}
+.main-container .bottom .main-bottom-item7 {
+    background-color: purple;
+    grid-column: 3/4;
+    grid-row:5/7;
+}
+.footer-container {
+    height: 10vh;
+    width: 1000vw;
+    max-width: 790px;
+    background-color: white;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+    
+}
+.footer-container .footer-item1 {
+    background-color: lightgreen;
+    height: 10vh;
+    width: 1000vw;
+    max-width: 720px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+}
+@media screen and (max-width: 600px) {
+    .header-container .header-item1 {
+        align-items: center;
+
+    }
+    .main-container .top {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+    }
+
+    .main-container .top .main-top-item1 {
+        grid-row: 1/2;
+        border-radius: 10%;
+    }
+    .main-container .top .main-top-item2 {
+        grid-row: 2/3;
+        border-radius: 10%;
+    }
+    .main-container .top .main-top-item3 {
+        grid-row: 3/4;
+        border-radius: 10%;
+    }
+    .main-container .bottom {
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows: repeat(5, 1fr);
+        height: 60vh;
+        background-color: white;
+        gap:5px;
+        padding:20px 20px;
+    }
+    .main-container .bottom .main-bottom-item1 {
+        background-color: lightpink;
+        grid-row: 1/2;
+    }
+    .main-container .bottom .main-bottom-item2 {
+        background-color: lightpink;
+        grid-row: 2/3;
+    }
+    .main-container .bottom .main-bottom-item3 {
+        background-color: lightpink;
+        grid-row: 3/4;
+    }
+    .main-container .bottom .main-bottom-item14{
+        background-color: lightpink;
+        grid-row: 4/5;
+    }
+    .main-container .bottom .main-bottom-item5 {
+        background-color: purple;
+        grid-column:1/2;
+        grid-row:1/2;
+    }
+    .main-container .bottom .main-bottom-item6 {
+        background-color: purple;
+        grid-column: 2/3;
+        grid-row:1/2;
+    }
+    .main-container .bottom .main-bottom-item7 {
+        background-color: purple;
+        grid-column: 3/4;
+        grid-row:1/2;
+    }
+}
